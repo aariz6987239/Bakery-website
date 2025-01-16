@@ -1,3 +1,3 @@
-document.querySelector("form").addEventListener("submit", function (e) {
-    alert("Thank you for contacting us! We will get back to you soon.");
+document.addEventListener("DOMContentLoaded", () => {
+    console.log("Website is fully loaded and interactive!");
 });

@@ -2,103 +2,75 @@ body {
     font-family: Arial, sans-serif;
     margin: 0;
     padding: 0;
-    line-height: 1.6;
-    background-color: #fef8e1;
 }
 
 header {
-    background: #ff9800;
-    color: #fff;
-    padding: 20px 0;
+    background-color: orange;
+    color: white;
+    padding: 1rem;
     text-align: center;
 }
 
-header h1 {
-    margin: 0;
-    font-size: 2.5rem;
-}
-
 nav ul {
-    list-style: none;
+    list-style-type: none;
     padding: 0;
-}
-
-nav ul li {
-    display: inline;
-    margin: 0 10px;
+    display: flex;
+    justify-content: center;
+    gap: 2rem;
 }
 
 nav ul li a {
-    color: #fff;
     text-decoration: none;
+    color: white;
     font-weight: bold;
 }
 
-section {
-    padding: 20px;
-    margin: 20px;
-    border-radius: 8px;
-    background: #fff;
+main {
+    padding: 1rem;
 }
 
-#menu ul {
-    list-style: none;
-    padding: 0;
+#menu, #about, #contact, #map {
+    margin-bottom: 2rem;
 }
 
-#menu ul li {
-    margin: 5px 0;
+.menu-item {
+    text-align: center;
+    margin-bottom: 1.5rem;
 }
 
-#blog article {
-    margin-bottom: 20px;
-    border-bottom: 1px solid #ddd;
-    padding-bottom: 10px;
-}
-
-#blog article h3 {
-    color: #ff5722;
-}
-
-.gallery-grid {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
-    gap: 10px;
-}
-
-.gallery-grid img {
-    width: 100%;
-    height: auto;
+.menu-item img {
+    max-width: 150px;
     border-radius: 8px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
 }
 
 form {
-    margin-top: 20px;
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    max-width: 400px;
+    margin: 0 auto;
 }
 
 form input, form textarea {
-    display: block;
-    width: 100%;
-    margin-bottom: 10px;
-    padding: 10px;
-    border: 1px solid #ddd;
-    border-radius: 5px;
+    padding: 0.5rem;
+    border: 1px solid #ccc;
+    border-radius: 4px;
 }
 
 form button {
-    background: #ff9800;
-    color: #fff;
+    background-color: green;
+    color: white;
     border: none;
-    padding: 10px 15px;
+    padding: 0.5rem;
+    border-radius: 4px;
     cursor: pointer;
-    border-radius: 5px;
 }
 
-footer {
-    text-align: center;
-    background: #333;
-    color: #fff;
-    padding: 10px 0;
-    margin-top: 20px;
+form button:hover {
+    background-color: darkgreen;
+}
+
+.map-container iframe {
+    border-radius: 8px;
 }

@@ -1,97 +1,79 @@
-/* General Styles */
 body {
     font-family: Arial, sans-serif;
     margin: 0;
     padding: 0;
-    box-sizing: border-box;
     line-height: 1.6;
-}
-
-header {
-    background: #ffa500;
+  }
+  
+  header {
+    background: #f4a261;
     color: white;
-    padding: 1rem 0;
+    padding: 10px 0;
     text-align: center;
-}
-
-header h1 {
+  }
+  
+  header h1 {
     margin: 0;
-    font-size: 2.5rem;
-}
-
-nav ul {
-    list-style: none;
-    padding: 0;
-    display: flex;
-    justify-content: center;
-    gap: 1rem;
-}
-
-nav ul li {
-    display: inline;
-}
-
-nav ul li a {
-    text-decoration: none;
+  }
+  
+  nav {
+    background: #e76f51;
     color: white;
-    font-weight: bold;
-}
-
-section {
-    padding: 2rem;
     text-align: center;
-}
-
-section h2 {
-    font-size: 2rem;
-    color: #333;
-    margin-bottom: 1rem;
-}
-
-#menu ul {
-    list-style: none;
-    padding: 0;
-}
-
-#menu ul li {
-    font-size: 1.2rem;
-    margin: 0.5rem 0;
-}
-
-#contact-form {
-    max-width: 500px;
-    margin: 1rem auto;
-    display: flex;
-    flex-direction: column;
-    gap: 0.5rem;
-}
-
-#contact-form input, #contact-form textarea, #contact-form button {
-    width: 100%;
-    padding: 0.8rem;
+    padding: 10px 0;
+  }
+  
+  nav a {
+    color: white;
+    margin: 0 15px;
+    text-decoration: none;
+    font-weight: bold;
+  }
+  
+  section {
+    padding: 20px;
+    text-align: center;
+  }
+  
+  form input,
+  form textarea,
+  form button {
+    display: block;
+    width: 80%;
+    margin: 10px auto;
+    padding: 10px;
     border: 1px solid #ddd;
     border-radius: 5px;
-    font-size: 1rem;
-}
-
-#contact-form button {
-    background: #ffa500;
+  }
+  
+  form button {
+    background: #2a9d8f;
     color: white;
     border: none;
-    font-weight: bold;
     cursor: pointer;
-}
-
-#contact-form button:hover {
-    background: #e69500;
-}
-
-footer {
-    background: #333;
-    color: white;
+  }
+  
+  form button:hover {
+    background: #21867a;
+  }
+  
+  footer {
     text-align: center;
-    padding: 1rem 0;
-    position: relative;
-    bottom: 0;
-    width: 100%;
-}
+    padding: 10px;
+    background: #264653;
+    color: white;
+    margin-top: 20px;
+  }
+  
+  @media (max-width: 768px) {
+    header, nav, section, footer {
+      text-align: center;
+    }
+    nav a {
+      display: block;
+      margin: 5px 0;
+    }
+    form input, form textarea, form button {
+      width: 95%;
+    }
+  }

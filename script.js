@@ -1,8 +1,3 @@
-// Smooth Scroll for Menu Links
-document.querySelectorAll('nav a').forEach(link => {
-    link.addEventListener('click', function (e) {
-      e.preventDefault();
-      const target = document.querySelector(this.getAttribute('href'));
-      target.scrollIntoView({ behavior: 'smooth' });
-    });
-  });
+document.querySelector("form").addEventListener("submit", function (e) {
+    alert("Thank you for contacting us! We will get back to you soon.");
+});

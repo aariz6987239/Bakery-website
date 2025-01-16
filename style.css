@@ -3,77 +3,102 @@ body {
     margin: 0;
     padding: 0;
     line-height: 1.6;
-  }
-  
-  header {
-    background: #f4a261;
-    color: white;
-    padding: 10px 0;
+    background-color: #fef8e1;
+}
+
+header {
+    background: #ff9800;
+    color: #fff;
+    padding: 20px 0;
     text-align: center;
-  }
-  
-  header h1 {
+}
+
+header h1 {
     margin: 0;
-  }
-  
-  nav {
-    background: #e76f51;
-    color: white;
-    text-align: center;
-    padding: 10px 0;
-  }
-  
-  nav a {
-    color: white;
-    margin: 0 15px;
+    font-size: 2.5rem;
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+}
+
+nav ul li {
+    display: inline;
+    margin: 0 10px;
+}
+
+nav ul li a {
+    color: #fff;
     text-decoration: none;
     font-weight: bold;
-  }
-  
-  section {
+}
+
+section {
     padding: 20px;
-    text-align: center;
-  }
-  
-  form input,
-  form textarea,
-  form button {
+    margin: 20px;
+    border-radius: 8px;
+    background: #fff;
+}
+
+#menu ul {
+    list-style: none;
+    padding: 0;
+}
+
+#menu ul li {
+    margin: 5px 0;
+}
+
+#blog article {
+    margin-bottom: 20px;
+    border-bottom: 1px solid #ddd;
+    padding-bottom: 10px;
+}
+
+#blog article h3 {
+    color: #ff5722;
+}
+
+.gallery-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+    gap: 10px;
+}
+
+.gallery-grid img {
+    width: 100%;
+    height: auto;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+form {
+    margin-top: 20px;
+}
+
+form input, form textarea {
     display: block;
-    width: 80%;
-    margin: 10px auto;
+    width: 100%;
+    margin-bottom: 10px;
     padding: 10px;
     border: 1px solid #ddd;
     border-radius: 5px;
-  }
-  
-  form button {
-    background: #2a9d8f;
-    color: white;
+}
+
+form button {
+    background: #ff9800;
+    color: #fff;
     border: none;
+    padding: 10px 15px;
     cursor: pointer;
-  }
-  
-  form button:hover {
-    background: #21867a;
-  }
-  
-  footer {
+    border-radius: 5px;
+}
+
+footer {
     text-align: center;
-    padding: 10px;
-    background: #264653;
-    color: white;
+    background: #333;
+    color: #fff;
+    padding: 10px 0;
     margin-top: 20px;
-  }
-  
-  @media (max-width: 768px) {
-    header, nav, section, footer {
-      text-align: center;
-    }
-    nav a {
-      display: block;
-      margin: 5px 0;
-    }
-    form input, form textarea, form button {
-      width: 95%;
-    }
-  }
+}

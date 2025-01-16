@@ -1,54 +1,85 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Bakery Delight</title>
-  <link rel="stylesheet" href="style.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bakery Delight</title>
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
-  <header>
-    <h1>Welcome to Bakery Delight</h1>
-    <nav>
-      <ul>
-        <li><a href="#menu">Menu</a></li>
-        <li><a href="#about">About Us</a></li>
-        <li><a href="#contact">Contact</a></li>
-      </ul>
-    </nav>
-  </header>
+    <header>
+        <h1>Welcome to Bakery Delight</h1>
+        <nav>
+            <ul>
+                <li><a href="#menu">Menu</a></li>
+                <li><a href="#about">About Us</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
 
-  <main>
-    <section id="menu">
-      <h2>Our Menu</h2>
-      <ul>
-        <li>Cupcakes - ₹50</li>
-        <li>Cookies - ₹30</li>
-        <li>Bread Loaves - ₹40</li>
-        <li>Pies - ₹80</li>
-      </ul>
-    </section>
+    <main>
+        <section id="menu">
+            <h2>Our Menu</h2>
+            <ul>
+                <li>Cupcakes - ₹50</li>
+                <li>Cookies - ₹30</li>
+                <li>Bread Loaves - ₹40</li>
+                <li>Pies - ₹80</li>
+            </ul>
+        </section>
 
-    <section id="about">
-      <h2>About Us</h2>
-      <p>We are a family-run bakery in Aligarh, known for our freshly baked goodies. Visit us for the best cakes and bread in town!</p>
-    </section>
+        <section id="about">
+            <h2>About Us</h2>
+            <p>We are a family-run bakery in Aligarh, known for our freshly baked goodies. Visit us for the best cakes and bread in town!</p>
+        </section>
 
-    <section id="contact">
-      <h2>Contact Us</h2>
-      <p>Phone: +91-123-456-7890</p>
-      <p>Email: bakerydelight@example.com</p>
-      <form action="https://formspree.io/f/xvggngwe" method="POST">
-        <input type="text" name="name" placeholder="Your Name" required>
-        <input type="email" name="email" placeholder="Your Email" required>
-        <textarea name="message" placeholder="Your Message" required></textarea>
-        <button type="submit">Send Message</button>
-      </form>
-    </section>
-  </main>
+        <section id="blog">
+            <h2>Our Blog</h2>
+            <article>
+                <h3>5 Tips for Baking the Perfect Cake</h3>
+                <p>Baking the perfect cake requires attention to detail. Start with fresh ingredients, preheat your oven, and never skip sifting your flour...</p>
+                <a href="#">Read More</a>
+            </article>
+            <article>
+                <h3>Why Sourdough Bread is Healthier</h3>
+                <p>Sourdough bread is packed with probiotics and has a unique tangy flavor. Learn why it's a favorite among bakers...</p>
+                <a href="#">Read More</a>
+            </article>
+        </section>
 
-  <footer>
-    <p>&copy; 2025 Bakery Delight. All rights reserved.</p>
-  </footer>
+        <section id="gallery">
+            <h2>Gallery</h2>
+            <div class="gallery-grid">
+                <img src="images/cupcake.jpg" alt="Cupcake">
+                <img src="images/cookies.jpg" alt="Cookies">
+                <img src="images/bread.jpg" alt="Bread">
+                <img src="images/pies.jpg" alt="Pies">
+            </div>
+        </section>
+
+        <section id="contact">
+            <h2>Contact Us</h2>
+            <p>Phone: +91-123-456-7890</p>
+            <p>Email: bakerydelight@example.com</p>
+            <form action="https://formspree.io/f/xvggngwe" method="POST">
+                <input type="text" name="name" placeholder="Your Name" required>
+                <input type="email" name="email" placeholder="Your Email" required>
+                <textarea name="message" placeholder="Your Message" required></textarea>
+                <button type="submit">Send Message</button>
+            </form>
+            <div id="map">
+                <iframe
+                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3651.9022365210777!2d90.39945281498191!3d23.747999494595777!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3755b85a45c479b7%3A0xc7b64f90c86a94b7!2sYour%20Bakery!5e0!3m2!1sen!2s!4v1618207252814!5m2!1sen!2s"
+                    width="100%" height="300" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2025 Bakery Delight. All rights reserved.</p>
+    </footer>
+
+    <script src="script.js"></script>
 </body>
 </html>

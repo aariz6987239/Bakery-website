@@ -1,64 +1,61 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Bakery Delight</title>
-  <link rel="stylesheet" href="style.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bakery Delight</title>
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
-  <header>
-    <h1>Welcome to Bakery Delight</h1>
-    <nav>
-      <ul>
-        <li><a href="#menu">Menu</a></li>
-        <li><a href="#about">About Us</a></li>
-        <li><a href="#contact">Contact</a></li>
-      </ul>
-    </nav>
-  </header>
+    <!-- Location Bar -->
+    <div id="location-bar">
+        <span id="location-text">No Location</span>
+        <button id="detect-location-btn">Detect Location</button>
+    </div>
+    
+    <!-- Welcome Section -->
+    <header>
+        <h1>Welcome to Bakery Delight</h1>
+        <nav>
+            <a href="#menu">Menu</a>
+            <a href="#about">About Us</a>
+            <a href="#order">Order Now</a>
+            <a href="#contact">Contact</a>
+        </nav>
+    </header>
 
-  <main>
+    <!-- Menu Section -->
     <section id="menu">
-      <h2>Our Menu</h2>
-      <div class="menu-row">
+        <h2>Our Menu</h2>
         <div class="menu-item">
-          <img src="cupcakes.png" alt="Cupcakes">
-          <h3>Cupcakes</h3>
-          <p>₹50</p>
-          <button onclick="orderItem('Cupcakes', 50)">Order Now</button>
+            <img src="cupcakes.png" alt="Cupcakes">
+            <p>Cupcakes - ₹50</p>
+            <button class="buy-now" data-item="Cupcakes" data-price="50">Buy Now</button>
         </div>
         <div class="menu-item">
-          <img src="cookies.png" alt="Cookies">
-          <h3>Cookies</h3>
-          <p>₹30</p>
-          <button onclick="orderItem('Cookies', 30)">Order Now</button>
+            <img src="cookies.png" alt="Cookies">
+            <p>Cookies - ₹30</p>
+            <button class="buy-now" data-item="Cookies" data-price="30">Buy Now</button>
         </div>
         <div class="menu-item">
-          <img src="bread.png" alt="Bread Loaves">
-          <h3>Bread Loaves</h3>
-          <p>₹40</p>
-          <button onclick="orderItem('Bread Loaves', 40)">Order Now</button>
+            <img src="bread.png" alt="Bread Loaves">
+            <p>Bread Loaves - ₹40</p>
+            <button class="buy-now" data-item="Bread Loaves" data-price="40">Buy Now</button>
         </div>
         <div class="menu-item">
-          <img src="pies.png" alt="Pies">
-          <h3>Pies</h3>
-          <p>₹80</p>
-          <button onclick="orderItem('Pies', 80)">Order Now</button>
+            <img src="pies.png" alt="Pies">
+            <p>Pies - ₹80</p>
+            <button class="buy-now" data-item="Pies" data-price="80">Buy Now</button>
         </div>
-      </div>
     </section>
 
+    <!-- Contact Section -->
     <section id="contact">
-      <h2>Contact Us</h2>
-      <p>Phone: +91-123-456-7890</p>
-      <p>Email: bakerydelight@example.com</p>
+        <h2>Contact Us</h2>
+        <p>Phone: +91-123-456-7890</p>
+        <p>Email: bakerydelight@example.com</p>
     </section>
-  </main>
 
-  <footer>
-    <p>&copy; 2025 Bakery Delight. All rights reserved.</p>
-  </footer>
-  <script src="script.js"></script>
+    <script src="script.js"></script>
 </body>
 </html>

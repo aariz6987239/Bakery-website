@@ -13,7 +13,6 @@
       <ul>
         <li><a href="#menu">Menu</a></li>
         <li><a href="#about">About Us</a></li>
-        <li><a href="#order">Order Now</a></li>
         <li><a href="#contact">Contact</a></li>
       </ul>
     </nav>
@@ -22,53 +21,32 @@
   <main>
     <section id="menu">
       <h2>Our Menu</h2>
-      <div class="menu-item">
-        <img src="cupcakes.png" alt="Cupcakes">
-        <h3>Cupcakes - ₹50</h3>
-        <button onclick="orderItem('Cupcakes', 50)">Buy Now</button>
+      <div class="menu-row">
+        <div class="menu-item">
+          <img src="cupcakes.png" alt="Cupcakes">
+          <h3>Cupcakes</h3>
+          <p>₹50</p>
+          <button onclick="orderItem('Cupcakes', 50)">Order Now</button>
+        </div>
+        <div class="menu-item">
+          <img src="cookies.png" alt="Cookies">
+          <h3>Cookies</h3>
+          <p>₹30</p>
+          <button onclick="orderItem('Cookies', 30)">Order Now</button>
+        </div>
+        <div class="menu-item">
+          <img src="bread.png" alt="Bread Loaves">
+          <h3>Bread Loaves</h3>
+          <p>₹40</p>
+          <button onclick="orderItem('Bread Loaves', 40)">Order Now</button>
+        </div>
+        <div class="menu-item">
+          <img src="pies.png" alt="Pies">
+          <h3>Pies</h3>
+          <p>₹80</p>
+          <button onclick="orderItem('Pies', 80)">Order Now</button>
+        </div>
       </div>
-      <div class="menu-item">
-        <img src="cookies.png" alt="Cookies">
-        <h3>Cookies - ₹30</h3>
-        <button onclick="orderItem('Cookies', 30)">Buy Now</button>
-      </div>
-      <div class="menu-item">
-        <img src="bread.png" alt="Bread Loaves">
-        <h3>Bread Loaves - ₹40</h3>
-        <button onclick="orderItem('Bread Loaves', 40)">Buy Now</button>
-      </div>
-      <div class="menu-item">
-        <img src="pies.png" alt="Pies">
-        <h3>Pies - ₹80</h3>
-        <button onclick="orderItem('Pies', 80)">Buy Now</button>
-      </div>
-    </section>
-
-    <section id="about">
-      <h2>About Us</h2>
-      <p>We are a family-run bakery in Aligarh, known for our freshly baked goodies. Visit us for the best cakes and bread in town!</p>
-    </section>
-
-    <section id="order">
-      <h2>Order Now</h2>
-      <form action="https://formspree.io/f/xvggngwe" method="POST">
-        <label for="name">Your Name:</label>
-        <input type="text" id="name" name="name" required>
-
-        <label for="email">Your Email:</label>
-        <input type="email" id="email" name="email" required>
-
-        <label for="item">Item:</label>
-        <input type="text" id="item" name="item" readonly>
-
-        <label for="price">Price:</label>
-        <input type="text" id="price" name="price" readonly>
-
-        <label for="quantity">Quantity:</label>
-        <input type="number" id="quantity" name="quantity" min="1" required>
-
-        <button type="submit">Place Order</button>
-      </form>
     </section>
 
     <section id="contact">

@@ -1,8 +1,5 @@
-// Dynamically populate the form when "Buy Now" is clicked
 function orderItem(itemName, itemPrice) {
-    document.getElementById('item').value = itemName;
-    document.getElementById('price').value = `₹${itemPrice}`;
-    window.location.href = "#order";
+    alert(`You selected ${itemName} priced at ₹${itemPrice}. Order functionality can be implemented here.`);
   }
   
   document.addEventListener("DOMContentLoaded", () => {

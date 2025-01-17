@@ -1,16 +1,13 @@
 function detectLocation() {
-    alert("Location detection feature coming soon!");
-  }
-  
-  function orderItem(itemName, price) {
-    const userName = prompt("Enter your name:");
-    const userEmail = prompt("Enter your email:");
-    const quantity = prompt(`Enter quantity for ${itemName}:`);
-    
-    if (userName && userEmail && quantity) {
-      alert(`Order placed successfully!\n\nItem: ${itemName}\nQuantity: ${quantity}\nTotal: ₹${price * quantity}\n\nThank you for ordering with Bakery Delight!`);
-      // In a real implementation, send order data to a server here
+    alert("Detecting location...");
+}
+
+function orderNow(item, price) {
+    const name = prompt("Enter your name:");
+    const quantity = prompt(`Enter quantity of ${item}:`);
+    if (name && quantity) {
+        alert(`Order placed for ${quantity} ${item}(s) at ₹${price * quantity}.`);
     } else {
-      alert("Order cancelled. Please provide all details.");
+        alert("Order canceled.");
     }
-  }
+}

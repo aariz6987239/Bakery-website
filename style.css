@@ -1,88 +1,94 @@
-/* General Reset */
+/* General Styles */
 body {
     font-family: Arial, sans-serif;
     margin: 0;
     padding: 0;
-    background-color: #f9f9f9;
-    color: #333;
-  }
-  
-  header {
-    background-color: orange;
-    color: white;
+}
+
+header {
     text-align: center;
-    padding: 1rem 0;
-  }
-  
-  .location-bar {
+    background-color: orange;
+    padding: 10px;
+}
+
+header .location-bar {
     background-color: blue;
     color: white;
     display: flex;
     justify-content: space-between;
-    align-items: center;
-    padding: 0.5rem 1rem;
-  }
-  
-  nav {
-    margin: 1rem 0;
-  }
-  
-  nav a {
-    color: white;
-    margin: 0 1rem;
+    padding: 10px;
+}
+
+nav a {
+    margin: 0 10px;
     text-decoration: none;
+    color: black;
     font-weight: bold;
-  }
-  
-  main {
-    padding: 1rem;
-  }
-  
-  h2 {
+}
+
+#menu {
+    padding: 20px;
     text-align: center;
-    margin-bottom: 1rem;
-  }
-  
-  .menu-grid {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
-    gap: 1rem;
-    padding: 1rem;
-  }
-  
-  .menu-item {
-    text-align: center;
-    background-color: white;
+}
+
+.menu-items {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+
+.menu-item {
     border: 1px solid #ddd;
-    padding: 1rem;
-    border-radius: 5px;
-    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-  }
-  
-  .menu-item img {
+    padding: 10px;
+    text-align: center;
+    width: 200px;
+}
+
+.menu-item img {
     max-width: 100%;
     height: auto;
-    border-radius: 5px;
-  }
-  
-  button {
+    margin-bottom: 10px;
+}
+
+.menu-item h3 {
+    font-size: 1.2em;
+}
+
+.menu-item button {
     background-color: blue;
     color: white;
     border: none;
-    padding: 0.5rem 1rem;
-    margin-top: 0.5rem;
-    border-radius: 5px;
+    padding: 10px;
     cursor: pointer;
-  }
-  
-  button:hover {
-    background-color: darkblue;
-  }
-  
-  footer {
+}
+
+#reviews {
+    background-color: #f9f9f9;
+    padding: 20px;
+    text-align: center;
+}
+
+#reviews h2 {
+    margin-bottom: 20px;
+}
+
+.review-list {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+
+.review {
+    background-color: white;
+    border: 1px solid #ddd;
+    padding: 15px;
+    width: 200px;
+    text-align: left;
+}
+
+footer {
     text-align: center;
     background-color: orange;
+    padding: 10px;
     color: white;
-    padding: 1rem 0;
-    margin-top: 2rem;
-  }
+}

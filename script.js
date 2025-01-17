@@ -1,16 +1,16 @@
-// Detect Location Button Logic
-document.getElementById("detect-location-btn").addEventListener("click", () => {
+// Detect Location Button
+const detectLocationButton = document.getElementById('detect-location-btn');
+detectLocationButton.addEventListener('click', () => {
     if (navigator.geolocation) {
         navigator.geolocation.getCurrentPosition(
             (position) => {
-                const { latitude, longitude } = position.coords;
-                document.getElementById("location-text").textContent = `Lat: ${latitude.toFixed(2)}, Long: ${longitude.toFixed(2)}`;
+                document.getElementById('location-text').textContent = `Latitude: ${position.coords.latitude}, Longitude: ${position.coords.longitude}`;
             },
             () => {
-                alert("Unable to retrieve your location. Please allow location access.");
+                document.getElementById('location-text').textContent = 'Unable to retrieve your location';
             }
         );
     } else {
-        alert("Geolocation is not supported by your browser.");
+        document.getElementById('location-text').textContent = 'Geolocation not supported';
     }
 });

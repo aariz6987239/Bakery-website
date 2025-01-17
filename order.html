@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Order Now - Bakery Delight</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <h1>Order Now</h1>
+        <nav>
+            <a href="index.html">Home</a>
+            <a href="about.html">About Us</a>
+            <a href="contact.html">Contact</a>
+        </nav>
+    </header>
+    <section>
+        <form action="https://formspree.io/f/xvggngwe" method="POST">
+            <input type="text" name="name" placeholder="Your Name" required>
+            <input type="email" name="email" placeholder="Your Email" required>
+            <select name="item">
+                <option value="Cupcakes">Cupcakes</option>
+                <option value="Cookies">Cookies</option>
+                <option value="Bread Loaves">Bread Loaves</option>
+                <option value="Pies">Pies</option>
+            </select>
+            <input type="number" name="quantity" placeholder="Quantity" required>
+            <textarea name="instructions" placeholder="Special Instructions"></textarea>
+            <button type="submit">Place Order</button>
+        </form>
+    </section>
+</body>
+</html>

@@ -5,30 +5,14 @@ body {
     padding: 0;
 }
 
-/* Location Bar */
 #location-bar {
     display: flex;
     justify-content: space-between;
-    align-items: center;
     background-color: #007bff;
     color: #fff;
-    padding: 10px 20px;
-    font-size: 14px;
+    padding: 10px;
 }
 
-#location-bar button {
-    background-color: #0056b3;
-    color: #fff;
-    border: none;
-    padding: 5px 10px;
-    cursor: pointer;
-}
-
-#location-bar button:hover {
-    background-color: #003d80;
-}
-
-/* Header */
 header {
     text-align: center;
     background-color: #ffa500;
@@ -41,9 +25,9 @@ header nav a {
     text-decoration: none;
 }
 
-/* Menu Section */
-#menu {
+section {
     padding: 20px;
+    text-align: center;
 }
 
 .menu-item {
@@ -66,8 +50,4 @@ header nav a {
     padding: 5px 10px;
     cursor: pointer;
     border-radius: 5px;
-}
-
-.buy-now:hover {
-    background-color: #0056b3;
 }

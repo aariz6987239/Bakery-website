@@ -5,12 +5,12 @@ const nextButton = document.querySelector('.carousel-next');
 let index = 0;
 
 prevButton.addEventListener('click', () => {
-  index = (index > 0) ? index - 1 : 4;
+  index = (index > 0) ? index - 1 : 3; // Adjust for the number of images
   updateCarousel();
 });
 
 nextButton.addEventListener('click', () => {
-  index = (index < 4) ? index + 1 : 0;
+  index = (index < 3) ? index + 1 : 0; // Adjust for the number of images
   updateCarousel();
 });
 

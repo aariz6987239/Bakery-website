@@ -1,76 +1,89 @@
+/* General Styling */
 body {
     font-family: Arial, sans-serif;
     margin: 0;
     padding: 0;
-}
-
-header {
-    background-color: orange;
+    line-height: 1.6;
+    color: #333;
+  }
+  
+  header {
+    background: orange;
     color: white;
-    padding: 1rem;
+    padding: 1rem 0;
     text-align: center;
-}
-
-nav ul {
-    list-style-type: none;
-    padding: 0;
+  }
+  
+  nav ul {
     display: flex;
     justify-content: center;
-    gap: 2rem;
-}
-
-nav ul li a {
-    text-decoration: none;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+  }
+  
+  nav ul li {
+    margin: 0 1rem;
+  }
+  
+  nav ul li a {
     color: white;
-    font-weight: bold;
-}
-
-main {
-    padding: 1rem;
-}
-
-#menu, #about, #contact, #map {
-    margin-bottom: 2rem;
-}
-
-.menu-item {
+    text-decoration: none;
+  }
+  
+  /* Section Styling */
+  section {
+    margin: 2rem;
+  }
+  
+  h1, h2 {
     text-align: center;
-    margin-bottom: 1.5rem;
-}
-
-.menu-item img {
+  }
+  
+  .gallery {
+    display: flex;
+    justify-content: space-around;
+    margin-top: 20px;
+  }
+  
+  .gallery img {
     max-width: 150px;
     border-radius: 8px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
-}
-
-form {
-    display: flex;
-    flex-direction: column;
-    gap: 1rem;
-    max-width: 400px;
-    margin: 0 auto;
-}
-
-form input, form textarea {
+    cursor: pointer;
+    transition: transform 0.3s;
+  }
+  
+  .gallery img:hover {
+    transform: scale(1.1);
+  }
+  
+  form input, form textarea {
+    display: block;
+    width: 100%;
+    margin-bottom: 1rem;
     padding: 0.5rem;
     border: 1px solid #ccc;
-    border-radius: 4px;
-}
-
-form button {
-    background-color: green;
+    border-radius: 5px;
+  }
+  
+  form button {
+    background: orange;
     color: white;
     border: none;
-    padding: 0.5rem;
-    border-radius: 4px;
+    padding: 0.7rem;
     cursor: pointer;
-}
-
-form button:hover {
-    background-color: darkgreen;
-}
-
-.map-container iframe {
-    border-radius: 8px;
-}
+    border-radius: 5px;
+  }
+  
+  form button:hover {
+    background: darkorange;
+  }
+  
+  /* Footer Styling */
+  footer {
+    background: #333;
+    color: white;
+    text-align: center;
+    padding: 1rem;
+    position: relative;
+  }

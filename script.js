@@ -1,3 +1,2 @@
-document.addEventListener("DOMContentLoaded", () => {
-    console.log("Website is fully loaded and interactive!");
-});
+// This script is for future interactivity
+console.log("Bakery Delight website loaded successfully!");

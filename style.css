@@ -1,89 +1,69 @@
-/* General Styling */
 body {
     font-family: Arial, sans-serif;
+    line-height: 1.6;
     margin: 0;
     padding: 0;
-    line-height: 1.6;
-    color: #333;
   }
   
   header {
     background: orange;
     color: white;
-    padding: 1rem 0;
+    padding: 1em 0;
     text-align: center;
   }
   
-  nav ul {
-    display: flex;
-    justify-content: center;
-    list-style: none;
-    margin: 0;
-    padding: 0;
-  }
-  
-  nav ul li {
-    margin: 0 1rem;
-  }
-  
-  nav ul li a {
+  nav a {
     color: white;
+    margin: 0 10px;
     text-decoration: none;
   }
   
-  /* Section Styling */
-  section {
-    margin: 2rem;
+  main {
+    padding: 1em;
   }
   
-  h1, h2 {
-    text-align: center;
-  }
-  
-  .gallery {
-    display: flex;
-    justify-content: space-around;
+  h2 {
+    color: darkorange;
     margin-top: 20px;
   }
   
-  .gallery img {
-    max-width: 150px;
-    border-radius: 8px;
-    cursor: pointer;
-    transition: transform 0.3s;
+  #gallery {
+    margin-top: 40px;
   }
   
-  .gallery img:hover {
-    transform: scale(1.1);
+  .carousel {
+    position: relative;
+    width: 80%;
+    margin: 20px auto;
+    overflow: hidden;
   }
   
-  form input, form textarea {
-    display: block;
+  .carousel-images {
+    display: flex;
+    transition: transform 0.5s ease-in-out;
+  }
+  
+  .carousel-images img {
     width: 100%;
-    margin-bottom: 1rem;
-    padding: 0.5rem;
-    border: 1px solid #ccc;
-    border-radius: 5px;
+    flex-shrink: 0;
+    cursor: pointer;
   }
   
-  form button {
-    background: orange;
+  .carousel-prev, .carousel-next {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background-color: rgba(0, 0, 0, 0.5);
     color: white;
     border: none;
-    padding: 0.7rem;
     cursor: pointer;
-    border-radius: 5px;
+    padding: 10px;
   }
   
-  form button:hover {
-    background: darkorange;
+  .carousel-prev {
+    left: 10px;
   }
   
-  /* Footer Styling */
-  footer {
-    background: #333;
-    color: white;
-    text-align: center;
-    padding: 1rem;
-    position: relative;
+  .carousel-next {
+    right: 10px;
   }

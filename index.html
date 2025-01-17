@@ -5,17 +5,14 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Bakery Delight</title>
   <link rel="stylesheet" href="style.css">
-  <link href="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.4/css/lightbox.min.css" rel="stylesheet" />
 </head>
 <body>
   <header>
     <h1>Welcome to Bakery Delight</h1>
     <nav>
-      <ul>
-        <li><a href="#menu">Menu</a></li>
-        <li><a href="#about">About Us</a></li>
-        <li><a href="#contact">Contact</a></li>
-      </ul>
+      <a href="#menu">Menu</a>
+      <a href="#about">About Us</a>
+      <a href="#contact">Contact</a>
     </nav>
   </header>
 
@@ -51,26 +48,23 @@
 
     <section id="gallery">
       <h2>Gallery</h2>
-      <div class="gallery">
-        <a href="cupcakes.png" class="lightbox" data-lightbox="gallery" data-title="Cupcakes">
+      <div class="carousel">
+        <div class="carousel-images">
           <img src="cupcakes.png" alt="Cupcakes">
-        </a>
-        <a href="cookies.png" class="lightbox" data-lightbox="gallery" data-title="Cookies">
           <img src="cookies.png" alt="Cookies">
-        </a>
-        <a href="bread.png" class="lightbox" data-lightbox="gallery" data-title="Bread">
           <img src="bread.png" alt="Bread">
-        </a>
-        <a href="pies.png" class="lightbox" data-lightbox="gallery" data-title="Pies">
           <img src="pies.png" alt="Pies">
-        </a>
+          <img src="special.png" alt="Special Item">
+        </div>
+        <button class="carousel-prev">❮</button>
+        <button class="carousel-next">❯</button>
       </div>
     </section>
 
     <section id="map">
       <h2>Visit Us</h2>
       <iframe
-        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3559.082667872297!2d78.06451271465787!3d27.88241618271288!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2zMjfCsDUzJzAxLjAiTiA3OMKwMDMnNTIuMyJF!5e0!3m2!1sen!2sin!4v1673916010284!5m2!1sen!2sin"
+        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3561.466060891251!2d78.08801251544418!3d27.176694983009683!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x39747c3bfe8d35e9%3A0x8f223a7b3a37a8f!2sAligarh%2C%20Uttar%20Pradesh!5e0!3m2!1sen!2sin!4v1618337654000!5m2!1sen!2sin"
         width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
     </section>
 
@@ -90,7 +84,7 @@
   <footer>
     <p>&copy; 2025 Bakery Delight. All rights reserved.</p>
   </footer>
+  
   <script src="script.js"></script>
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.4/js/lightbox.min.js"></script>
 </body>
 </html>

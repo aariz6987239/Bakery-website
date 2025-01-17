@@ -1,16 +1,16 @@
-// Detect Location Button
-const detectLocationButton = document.getElementById('detect-location-btn');
-detectLocationButton.addEventListener('click', () => {
-    if (navigator.geolocation) {
-        navigator.geolocation.getCurrentPosition(
-            (position) => {
-                document.getElementById('location-text').textContent = `Latitude: ${position.coords.latitude}, Longitude: ${position.coords.longitude}`;
-            },
-            () => {
-                document.getElementById('location-text').textContent = 'Unable to retrieve your location';
-            }
-        );
+function detectLocation() {
+    alert("Location detection feature coming soon!");
+  }
+  
+  function orderItem(itemName, price) {
+    const userName = prompt("Enter your name:");
+    const userEmail = prompt("Enter your email:");
+    const quantity = prompt(`Enter quantity for ${itemName}:`);
+    
+    if (userName && userEmail && quantity) {
+      alert(`Order placed successfully!\n\nItem: ${itemName}\nQuantity: ${quantity}\nTotal: ₹${price * quantity}\n\nThank you for ordering with Bakery Delight!`);
+      // In a real implementation, send order data to a server here
     } else {
-        document.getElementById('location-text').textContent = 'Geolocation not supported';
+      alert("Order cancelled. Please provide all details.");
     }
-});
+  }

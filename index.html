@@ -13,8 +13,8 @@
       <ul>
         <li><a href="#menu">Menu</a></li>
         <li><a href="#about">About Us</a></li>
-        <li><a href="#contact">Contact</a></li>
         <li><a href="#order">Order Now</a></li>
+        <li><a href="#contact">Contact</a></li>
       </ul>
     </nav>
   </header>
@@ -22,12 +22,26 @@
   <main>
     <section id="menu">
       <h2>Our Menu</h2>
-      <ul>
-        <li>Cupcakes - ₹50</li>
-        <li>Cookies - ₹30</li>
-        <li>Bread Loaves - ₹40</li>
-        <li>Pies - ₹80</li>
-      </ul>
+      <div class="menu-item">
+        <img src="cupcakes.png" alt="Cupcakes">
+        <h3>Cupcakes - ₹50</h3>
+        <button onclick="orderItem('Cupcakes', 50)">Buy Now</button>
+      </div>
+      <div class="menu-item">
+        <img src="cookies.png" alt="Cookies">
+        <h3>Cookies - ₹30</h3>
+        <button onclick="orderItem('Cookies', 30)">Buy Now</button>
+      </div>
+      <div class="menu-item">
+        <img src="bread.png" alt="Bread Loaves">
+        <h3>Bread Loaves - ₹40</h3>
+        <button onclick="orderItem('Bread Loaves', 40)">Buy Now</button>
+      </div>
+      <div class="menu-item">
+        <img src="pies.png" alt="Pies">
+        <h3>Pies - ₹80</h3>
+        <button onclick="orderItem('Pies', 80)">Buy Now</button>
+      </div>
     </section>
 
     <section id="about">
@@ -44,22 +58,14 @@
         <label for="email">Your Email:</label>
         <input type="email" id="email" name="email" required>
 
-        <label for="phone">Your Phone:</label>
-        <input type="tel" id="phone" name="phone" required>
+        <label for="item">Item:</label>
+        <input type="text" id="item" name="item" readonly>
 
-        <label for="item">Select Item:</label>
-        <select id="item" name="item" required>
-          <option value="Cupcakes">Cupcakes</option>
-          <option value="Cookies">Cookies</option>
-          <option value="Bread Loaves">Bread Loaves</option>
-          <option value="Pies">Pies</option>
-        </select>
+        <label for="price">Price:</label>
+        <input type="text" id="price" name="price" readonly>
 
         <label for="quantity">Quantity:</label>
         <input type="number" id="quantity" name="quantity" min="1" required>
-
-        <label for="instructions">Special Instructions:</label>
-        <textarea id="instructions" name="instructions" rows="4"></textarea>
 
         <button type="submit">Place Order</button>
       </form>

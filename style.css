@@ -36,36 +36,39 @@ body {
     color: orange;
   }
   
-  form {
-    background-color: #f9f9f9;
-    padding: 20px;
-    border-radius: 5px;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-    max-width: 400px;
-    margin: 0 auto;
-  }
-  
-  form label {
-    display: block;
-    margin: 10px 0 5px;
-  }
-  
-  form input, form select, form textarea, form button {
-    width: 100%;
-    padding: 10px;
-    margin-bottom: 10px;
+  /* Menu Items */
+  .menu-item {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
     border: 1px solid #ddd;
+    padding: 10px;
+    margin-bottom: 20px;
     border-radius: 5px;
   }
   
-  form button {
+  .menu-item img {
+    width: 80px;
+    height: 80px;
+    border-radius: 10px;
+  }
+  
+  .menu-item h3 {
+    flex: 1;
+    margin-left: 20px;
+    color: #333;
+  }
+  
+  .menu-item button {
     background-color: orange;
     color: white;
     border: none;
+    padding: 10px;
     cursor: pointer;
+    border-radius: 5px;
   }
   
-  form button:hover {
+  .menu-item button:hover {
     background-color: darkorange;
   }
   

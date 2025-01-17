@@ -1,43 +1,184 @@
-/* Existing styles remain unchanged */
+/* General Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
 
-/* Subscription Form */
-#subscribe {
-    margin: 20px auto;
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    margin: 0;
+    padding: 0;
+}
+
+/* Header Styles */
+header {
+    background-color: orange;
+    color: white;
+    padding: 1rem 0;
     text-align: center;
-    padding: 20px;
-    background-color: #f9f9f9;
-  }
-  
-  #subscribe h2 {
-    font-size: 1.8rem;
-    margin-bottom: 10px;
-  }
-  
-  .subscription-form {
+}
+
+header h1 {
+    font-size: 2.5rem;
+    margin-bottom: 0.5rem;
+}
+
+header nav {
+    margin: 1rem 0;
+}
+
+header nav a {
+    color: white;
+    text-decoration: none;
+    margin: 0 1rem;
+    font-weight: bold;
+}
+
+header nav a:hover {
+    text-decoration: underline;
+}
+
+/* Location Bar */
+.location-bar {
+    background-color: #007bff;
+    color: white;
+    text-align: center;
+    padding: 0.5rem;
+}
+
+.location-bar button {
+    background-color: white;
+    color: #007bff;
+    border: none;
+    padding: 0.5rem 1rem;
+    cursor: pointer;
+    font-weight: bold;
+}
+
+.location-bar button:hover {
+    background-color: #e9ecef;
+}
+
+/* Menu Section */
+.menu {
+    padding: 2rem;
+    text-align: center;
+}
+
+.menu h2 {
+    font-size: 2rem;
+    margin-bottom: 1.5rem;
+}
+
+.menu-container {
     display: flex;
     justify-content: center;
-    align-items: center;
-    gap: 10px;
-  }
-  
-  .subscription-form input {
-    padding: 10px;
-    font-size: 1rem;
-    border: 1px solid #ccc;
+    flex-wrap: wrap;
+    gap: 1rem;
+}
+
+.menu-item {
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    padding: 1rem;
+    text-align: center;
+    width: 200px;
+    background-color: #fff;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.menu-item img {
+    max-width: 100%;
     border-radius: 5px;
-    width: 300px;
-  }
-  
-  .subscription-form button {
-    padding: 10px 20px;
-    font-size: 1rem;
-    color: white;
+}
+
+.menu-item h3 {
+    margin: 0.5rem 0;
+}
+
+.menu-item button {
+    margin-top: 0.5rem;
     background-color: #007bff;
+    color: white;
+    border: none;
+    padding: 0.5rem 1rem;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+.menu-item button:hover {
+    background-color: #0056b3;
+}
+
+/* Testimonials Section */
+.testimonials {
+    padding: 2rem;
+    background-color: #f9f9f9;
+    text-align: center;
+}
+
+.testimonials h2 {
+    font-size: 2rem;
+    margin-bottom: 1.5rem;
+}
+
+.testimonial {
+    display: inline-block;
+    margin: 0 1rem;
+    padding: 1rem;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    background-color: white;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+/* Subscription Form */
+.subscription {
+    padding: 2rem;
+    background-color: #007bff;
+    color: white;
+    text-align: center;
+}
+
+.subscription h2 {
+    font-size: 2rem;
+    margin-bottom: 1.5rem;
+}
+
+.subscription form {
+    margin-top: 1rem;
+}
+
+.subscription input[type="email"] {
+    padding: 0.5rem;
     border: none;
     border-radius: 5px;
+    margin-right: 1rem;
+    width: 250px;
+}
+
+.subscription button {
+    padding: 0.5rem 1rem;
+    background-color: orange;
+    border: none;
+    color: white;
     cursor: pointer;
-  }
-  
-  .subscription-form button:hover {
-    background-color: #0056b3;
-  }
+    border-radius: 5px;
+    font-weight: bold;
+}
+
+.subscription button:hover {
+    background-color: #ff9900;
+}
+
+/* Footer */
+footer {
+    background-color: orange;
+    color: white;
+    text-align: center;
+    padding: 1rem 0;
+    margin-top: 2rem;
+    font-size: 0.9rem;
+}

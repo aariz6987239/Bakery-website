@@ -10,9 +10,12 @@
   <header>
     <h1>Welcome to Bakery Delight</h1>
     <nav>
-      <a href="#menu">Menu</a>
-      <a href="#about">About Us</a>
-      <a href="#contact">Contact</a>
+      <ul>
+        <li><a href="#menu">Menu</a></li>
+        <li><a href="#about">About Us</a></li>
+        <li><a href="#contact">Contact</a></li>
+        <li><a href="#order">Order Now</a></li>
+      </ul>
     </nav>
   </header>
 
@@ -32,58 +35,46 @@
       <p>We are a family-run bakery in Aligarh, known for our freshly baked goodies. Visit us for the best cakes and bread in town!</p>
     </section>
 
-    <section id="blog">
-      <h2>Our Blog</h2>
-      <article>
-        <h3>5 Tips for Baking the Perfect Cake</h3>
-        <p>Baking the perfect cake requires attention to detail. Start with fresh ingredients, preheat your oven, and never skip sifting your flour...</p>
-        <a href="#">Read More</a>
-      </article>
-      <article>
-        <h3>Why Sourdough Bread is Healthier</h3>
-        <p>Sourdough bread is packed with probiotics and has a unique tangy flavor. Learn why it’s a favorite among bakers...</p>
-        <a href="#">Read More</a>
-      </article>
-    </section>
+    <section id="order">
+      <h2>Order Now</h2>
+      <form action="https://formspree.io/f/xvggngwe" method="POST">
+        <label for="name">Your Name:</label>
+        <input type="text" id="name" name="name" required>
 
-    <section id="gallery">
-      <h2>Gallery</h2>
-      <div class="carousel">
-        <div class="carousel-images">
-          <img src="cupcakes.png" alt="Cupcakes">
-          <img src="cookies.png" alt="Cookies">
-          <img src="bread.png" alt="Bread">
-          <img src="pies.png" alt="Pies">
-        </div>
-        <button class="carousel-prev">❮</button>
-        <button class="carousel-next">❯</button>
-      </div>
-    </section>
+        <label for="email">Your Email:</label>
+        <input type="email" id="email" name="email" required>
 
-    <section id="map">
-      <h2>Visit Us</h2>
-      <iframe
-        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3561.466060891251!2d78.08801251544418!3d27.176694983009683!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x39747c3bfe8d35e9%3A0x8f223a7b3a37a8f!2sAligarh%2C%20Uttar%20Pradesh!5e0!3m2!1sen!2sin!4v1618337654000!5m2!1sen!2sin"
-        width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+        <label for="phone">Your Phone:</label>
+        <input type="tel" id="phone" name="phone" required>
+
+        <label for="item">Select Item:</label>
+        <select id="item" name="item" required>
+          <option value="Cupcakes">Cupcakes</option>
+          <option value="Cookies">Cookies</option>
+          <option value="Bread Loaves">Bread Loaves</option>
+          <option value="Pies">Pies</option>
+        </select>
+
+        <label for="quantity">Quantity:</label>
+        <input type="number" id="quantity" name="quantity" min="1" required>
+
+        <label for="instructions">Special Instructions:</label>
+        <textarea id="instructions" name="instructions" rows="4"></textarea>
+
+        <button type="submit">Place Order</button>
+      </form>
     </section>
 
     <section id="contact">
       <h2>Contact Us</h2>
       <p>Phone: +91-123-456-7890</p>
       <p>Email: bakerydelight@example.com</p>
-      <form action="https://formspree.io/f/xvggngwe" method="POST">
-        <input type="text" name="name" placeholder="Your Name" required>
-        <input type="email" name="email" placeholder="Your Email" required>
-        <textarea name="message" placeholder="Your Message" required></textarea>
-        <button type="submit">Send Message</button>
-      </form>
     </section>
   </main>
 
   <footer>
     <p>&copy; 2025 Bakery Delight. All rights reserved.</p>
   </footer>
-  
   <script src="script.js"></script>
 </body>
 </html>

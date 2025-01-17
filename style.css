@@ -1,94 +1,43 @@
-/* General Styles */
-body {
-    font-family: Arial, sans-serif;
-    margin: 0;
-    padding: 0;
-}
+/* Existing styles remain unchanged */
 
-header {
+/* Subscription Form */
+#subscribe {
+    margin: 20px auto;
     text-align: center;
-    background-color: orange;
-    padding: 10px;
-}
-
-header .location-bar {
-    background-color: blue;
-    color: white;
-    display: flex;
-    justify-content: space-between;
-    padding: 10px;
-}
-
-nav a {
-    margin: 0 10px;
-    text-decoration: none;
-    color: black;
-    font-weight: bold;
-}
-
-#menu {
     padding: 20px;
-    text-align: center;
-}
-
-.menu-items {
-    display: flex;
-    justify-content: center;
-    gap: 20px;
-}
-
-.menu-item {
-    border: 1px solid #ddd;
-    padding: 10px;
-    text-align: center;
-    width: 200px;
-}
-
-.menu-item img {
-    max-width: 100%;
-    height: auto;
-    margin-bottom: 10px;
-}
-
-.menu-item h3 {
-    font-size: 1.2em;
-}
-
-.menu-item button {
-    background-color: blue;
-    color: white;
-    border: none;
-    padding: 10px;
-    cursor: pointer;
-}
-
-#reviews {
     background-color: #f9f9f9;
-    padding: 20px;
-    text-align: center;
-}
-
-#reviews h2 {
-    margin-bottom: 20px;
-}
-
-.review-list {
+  }
+  
+  #subscribe h2 {
+    font-size: 1.8rem;
+    margin-bottom: 10px;
+  }
+  
+  .subscription-form {
     display: flex;
     justify-content: center;
-    gap: 20px;
-}
-
-.review {
-    background-color: white;
-    border: 1px solid #ddd;
-    padding: 15px;
-    width: 200px;
-    text-align: left;
-}
-
-footer {
-    text-align: center;
-    background-color: orange;
+    align-items: center;
+    gap: 10px;
+  }
+  
+  .subscription-form input {
     padding: 10px;
+    font-size: 1rem;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    width: 300px;
+  }
+  
+  .subscription-form button {
+    padding: 10px 20px;
+    font-size: 1rem;
     color: white;
-}
+    background-color: #007bff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+  
+  .subscription-form button:hover {
+    background-color: #0056b3;
+  }

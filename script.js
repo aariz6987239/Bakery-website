@@ -1,21 +1,11 @@
-document.addEventListener("DOMContentLoaded", () => {
-    // Handle "Order Now" buttons
-    const orderButtons = document.querySelectorAll(".order-now");
-    orderButtons.forEach((button) => {
-      button.addEventListener("click", () => {
-        const itemName = button.dataset.item || "Special Offer";
-        alert(`Order placed for: ${itemName}`);
-      });
-    });
-  
-    // Dynamically update special offer
-    const specialOffer = {
-      title: "Special Chocolate Cake",
-      description: "A delightful chocolate cake available only today!",
-      image: "images/special-chocolate-cake.png",
-    };
-  
-    document.getElementById("offer-title").textContent = specialOffer.title;
-    document.getElementById("offer-description").textContent = specialOffer.description;
-    document.getElementById("offer-image").src = specialOffer.image;
-  });
+// Form Validation: Ensure a payment method is selected
+document.querySelector('form').addEventListener('submit', function (event) {
+  const upiProof = document.getElementById('upi-proof').files.length > 0;
+  const bankProof = document.getElementById('bank-proof').files.length > 0;
+  const codChecked = document.querySelector('input[name="cod"]:checked') !== null;
+
+  if (!upiProof && !bankProof && !codChecked) {
+    event.preventDefault();
+    alert('Please select a payment method!');
+  }
+});

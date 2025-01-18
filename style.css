@@ -1,91 +1,103 @@
-/* General Styles */
+/* Global Styles */
 body {
-    font-family: Arial, sans-serif;
-    margin: 0;
-    padding: 0;
-  }
-  
-  header {
-    background-color: orange;
-    text-align: center;
-    padding: 10px;
-  }
-  
-  .location-bar {
-    background-color: blue;
-    color: white;
-    padding: 5px;
-    text-align: right;
-  }
-  
-  .nav-links {
-    list-style-type: none;
-    display: flex;
-    justify-content: center;
-    padding: 0;
-  }
-  
-  .nav-links li {
-    margin: 0 15px;
-  }
-  
-  .nav-links a {
-    text-decoration: none;
-    color: white;
-  }
-  
-  .menu-grid {
-    display: flex;
-    justify-content: center;
-    gap: 15px;
-  }
-  
-  .menu-item {
-    text-align: center;
-    border: 1px solid #ddd;
-    padding: 10px;
-    border-radius: 8px;
-  }
-  
-  .menu-item img {
-    max-width: 100px;
-    height: auto;
-    border-radius: 8px;
-  }
-  
-  .order-now {
-    background-color: blue;
-    color: white;
-    border: none;
-    padding: 5px 10px;
-    cursor: pointer;
-    border-radius: 5px;
-  }
-  
-  #testimonials, #special-offer {
-    margin: 20px;
-    text-align: center;
-  }
-  
-  .testimonial-grid {
-    display: flex;
-    justify-content: space-around;
-    gap: 10px;
-  }
-  
-  #special-offer {
-    background-color: #f9f9f9;
-    padding: 15px;
-  }
-  
-  #special-offer .offer {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    gap: 20px;
-  }
-  
-  #special-offer img {
-    max-width: 150px;
-    border-radius: 8px;
-  }
+  font-family: Arial, sans-serif;
+  line-height: 1.6;
+  margin: 0;
+  padding: 0;
+}
+
+header {
+  background: #ff6600;
+  color: #fff;
+  padding: 10px 20px;
+  text-align: center;
+}
+
+nav a {
+  color: #fff;
+  margin: 0 10px;
+  text-decoration: none;
+}
+
+nav a.active {
+  font-weight: bold;
+  text-decoration: underline;
+}
+
+main {
+  padding: 20px;
+}
+
+footer {
+  text-align: center;
+  background: #333;
+  color: #fff;
+  padding: 10px;
+  margin-top: 20px;
+}
+
+/* Order Now Page Styles */
+#order-form {
+  max-width: 600px;
+  margin: 0 auto;
+  padding: 20px;
+  background: #f9f9f9;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+#order-form h2 {
+  text-align: center;
+  color: #333;
+}
+
+#order-form form {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+#order-form label {
+  font-weight: bold;
+  color: #555;
+}
+
+#order-form input,
+#order-form textarea,
+#order-form select,
+#order-form button {
+  padding: 10px;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  font-size: 1rem;
+}
+
+#order-form button {
+  background: #ff6600;
+  color: #fff;
+  font-weight: bold;
+  cursor: pointer;
+  border: none;
+}
+
+#order-form button:hover {
+  background: #e65c00;
+}
+
+#order-form h3 {
+  margin-top: 20px;
+  font-size: 1.2rem;
+  color: #333;
+}
+
+#order-form h4 {
+  font-size: 1.1rem;
+  margin-bottom: 5px;
+  color: #444;
+}
+
+#order-form p {
+  margin: 5px 0;
+  font-size: 0.9rem;
+  color: #666;
+}

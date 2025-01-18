@@ -1,15 +1,19 @@
-function redirectToOrder(item) {
-  const upiID = "9060409921@ptaxis";
-  const prices = {
-      "Cupcakes": 50,
-      "Cookies": 30,
-      "Bread Loaves": 40,
-      "Pies": 80,
-      "Special Chocolate Cake": 150
+document.addEventListener('DOMContentLoaded', () => {
+  // Detect location functionality
+  window.detectLocation = function () {
+    alert("Detect location functionality is not implemented yet.");
   };
 
-  const amount = prices[item];
-  const upiLink = `upi://pay?pa=${upiID}&pn=BakeryDelight&am=${amount}&cu=INR`;
+  // Order Now functionality
+  const orderNowButtons = document.querySelectorAll('.order-now-btn');
 
-  window.location.href = upiLink;
-}
+  orderNowButtons.forEach((button) => {
+    button.addEventListener('click', (event) => {
+      const item = event.target.getAttribute('data-item');
+      const price = event.target.getAttribute('data-price');
+
+      // Redirect to payment page
+      alert(`Ordering ${item} for ₹${price}. Proceeding to payment.`);
+    });
+  });
+});

@@ -2,75 +2,100 @@ body {
   font-family: Arial, sans-serif;
   margin: 0;
   padding: 0;
-  box-sizing: border-box;
 }
 
 header {
   background-color: orange;
-  padding: 20px;
+  padding: 10px;
   text-align: center;
-}
-
-nav {
-  margin-top: 10px;
-}
-
-nav a {
-  margin: 0 10px;
-  text-decoration: none;
   color: white;
 }
 
 .location-bar {
-  background-color: blue;
-  color: white;
-  padding: 10px;
-  text-align: center;
-  font-size: 14px;
-}
-
-.location-bar button {
-  margin-left: 10px;
-  padding: 5px 10px;
-  background: white;
-  border: none;
-  cursor: pointer;
-}
-
-.menu-items {
   display: flex;
-  justify-content: center;
-  gap: 20px;
+  justify-content: space-between;
+  padding: 5px 10px;
+  background-color: #007BFF;
+  color: white;
+}
+
+nav a {
+  margin: 0 15px;
+  color: white;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+#menu {
+  padding: 20px;
+  text-align: center;
 }
 
 .menu-item {
+  display: inline-block;
+  margin: 15px;
   text-align: center;
-  border: 1px solid #ccc;
-  border-radius: 8px;
-  padding: 10px;
-  width: 200px;
 }
 
 .menu-item img {
-  width: 100%;
-  height: auto;
-  border-radius: 8px;
+  width: 150px;
+  height: 150px;
+  object-fit: cover;
+  border-radius: 10px;
 }
 
-button {
-  background-color: blue;
+.order-now-btn {
+  background-color: #007BFF;
   color: white;
   border: none;
-  padding: 10px 20px;
-  cursor: pointer;
-  margin-top: 10px;
+  padding: 10px 15px;
   border-radius: 5px;
+  cursor: pointer;
+  font-weight: bold;
+}
+
+.order-now-btn:hover {
+  background-color: #0056b3;
+}
+
+#testimonials,
+#special-offer {
+  padding: 20px;
+  text-align: center;
+}
+
+blockquote {
+  font-style: italic;
+  margin: 10px auto;
+  max-width: 600px;
 }
 
 footer {
-  background-color: orange;
-  color: white;
   text-align: center;
+  background-color: orange;
   padding: 10px;
-  margin-top: 20px;
+  color: white;
+}
+
+.offer {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 20px auto;
+}
+
+.offer img {
+  width: 150px;
+  height: 150px;
+  object-fit: cover;
+  margin-right: 15px;
+}
+
+.offer-details {
+  text-align: left;
+}
+
+.offer-details h3 {
+  margin: 0;
+  color: orange;
 }

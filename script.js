@@ -1,44 +1,35 @@
-// JavaScript for Dynamic Cart System
-const cart = [];
-const cartItemsContainer = document.getElementById('cart-items');
-const cartTotal = document.getElementById('cart-total');
+// Cart logic
+let cart = [];
 
-// Add to Cart Functionality
-document.querySelectorAll('.add-to-cart').forEach(button => {
-  button.addEventListener('click', (e) => {
-    const item = e.target.closest('.menu-item');
-    const itemName = item.getAttribute('data-name');
-    const itemPrice = parseInt(item.getAttribute('data-price'));
-
-    const existingItem = cart.find(cartItem => cartItem.name === itemName);
-    if (existingItem) {
-      existingItem.quantity++;
-    } else {
-      cart.push({ name: itemName, price: itemPrice, quantity: 1 });
-    }
+document.querySelectorAll('.add-to-cart').forEach((button) => {
+  button.addEventListener('click', () => {
+    const item = button.dataset.item;
+    const price = parseInt(button.dataset.price, 10);
+    cart.push({ item, price });
     updateCart();
   });
 });
 
-// Update Cart
 function updateCart() {
-  cartItemsContainer.innerHTML = '';
+  const cartItems = document.getElementById('cart-items');
+  const cartTotal = document.getElementById('cart-total');
+  cartItems.innerHTML = '';
   let total = 0;
 
-  cart.forEach(item => {
-    const cartItem = document.createElement('div');
-    cartItem.className = 'cart-item';
-    cartItem.innerHTML = `
-      <p>${item.name} - ₹${item.price} x ${item.quantity}</p>
-    `;
-    cartItemsContainer.appendChild(cartItem);
-    total += item.price * item.quantity;
+  cart.forEach((cartItem, index) => {
+    const li = document.createElement('li');
+    li.textContent = `${cartItem.item} - ₹${cartItem.price}`;
+    cartItems.appendChild(li);
+    total += cartItem.price;
   });
 
   cartTotal.textContent = total;
 }
 
-// Checkout Button
-document.getElementById('checkout').addEventListener('click', () => {
-  alert('Checkout is not integrated yet!');
+document.getElementById('checkout-btn').addEventListener('click', () => {
+  if (cart.length === 0) {
+    alert('Your cart is empty!');
+    return;
+  }
+  window.location.href = `order.html?items=${JSON.stringify(cart)}`;
 });

@@ -1,11 +1,15 @@
-// Form Validation: Ensure a payment method is selected
-document.querySelector('form').addEventListener('submit', function (event) {
-  const upiProof = document.getElementById('upi-proof').files.length > 0;
-  const bankProof = document.getElementById('bank-proof').files.length > 0;
-  const codChecked = document.querySelector('input[name="cod"]:checked') !== null;
+function redirectToOrder(item) {
+  const upiID = "9060409921@ptaxis";
+  const prices = {
+      "Cupcakes": 50,
+      "Cookies": 30,
+      "Bread Loaves": 40,
+      "Pies": 80,
+      "Special Chocolate Cake": 150
+  };
 
-  if (!upiProof && !bankProof && !codChecked) {
-    event.preventDefault();
-    alert('Please select a payment method!');
-  }
-});
+  const amount = prices[item];
+  const upiLink = `upi://pay?pa=${upiID}&pn=BakeryDelight&am=${amount}&cu=INR`;
+
+  window.location.href = upiLink;
+}

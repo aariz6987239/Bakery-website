@@ -1,101 +1,58 @@
+/* General Styles */
 body {
   font-family: Arial, sans-serif;
   margin: 0;
   padding: 0;
 }
-
 header {
-  background-color: orange;
+  background: #ffcc66;
   padding: 10px;
   text-align: center;
-  color: white;
 }
-
-.location-bar {
-  display: flex;
-  justify-content: space-between;
-  padding: 5px 10px;
-  background-color: #007BFF;
-  color: white;
-}
-
-nav a {
-  margin: 0 15px;
-  color: white;
+header nav a {
+  margin: 0 10px;
   text-decoration: none;
-  font-weight: bold;
+  color: #333;
 }
 
 #menu {
-  padding: 20px;
-  text-align: center;
+  display: flex;
+  justify-content: space-around;
+  margin: 20px;
 }
-
 .menu-item {
-  display: inline-block;
-  margin: 15px;
   text-align: center;
+  border: 1px solid #ddd;
+  padding: 10px;
+  border-radius: 5px;
 }
-
 .menu-item img {
-  width: 150px;
-  height: 150px;
-  object-fit: cover;
-  border-radius: 10px;
+  max-width: 150px;
+  margin-bottom: 10px;
+}
+.add-to-cart {
+  background: #007bff;
+  color: #fff;
+  border: none;
+  padding: 5px 10px;
+  cursor: pointer;
+  border-radius: 3px;
 }
 
-.order-now-btn {
-  background-color: #007BFF;
-  color: white;
+#cart {
+  margin: 20px;
+}
+#cart-items {
+  margin: 10px 0;
+}
+#cart-summary {
+  text-align: right;
+}
+#checkout {
+  background: #28a745;
+  color: #fff;
   border: none;
-  padding: 10px 15px;
+  padding: 10px;
   border-radius: 5px;
   cursor: pointer;
-  font-weight: bold;
-}
-
-.order-now-btn:hover {
-  background-color: #0056b3;
-}
-
-#testimonials,
-#special-offer {
-  padding: 20px;
-  text-align: center;
-}
-
-blockquote {
-  font-style: italic;
-  margin: 10px auto;
-  max-width: 600px;
-}
-
-footer {
-  text-align: center;
-  background-color: orange;
-  padding: 10px;
-  color: white;
-}
-
-.offer {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  margin: 20px auto;
-}
-
-.offer img {
-  width: 150px;
-  height: 150px;
-  object-fit: cover;
-  margin-right: 15px;
-}
-
-.offer-details {
-  text-align: left;
-}
-
-.offer-details h3 {
-  margin: 0;
-  color: orange;
 }

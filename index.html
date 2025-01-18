@@ -1,83 +1,60 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Bakery Delight</title>
-    <link rel="stylesheet" href="style.css">
-    <script defer src="script.js"></script>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Bakery Delight</title>
+  <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <header>
-        <div id="location-bar">
-            <p>No Location</p>
-            <button id="detect-location">Detect Location</button>
-        </div>
-        <h1>Welcome to Bakery Delight</h1>
-        <nav>
-            <a href="about.html">About Us</a>
-            <a href="order.html">Order Now</a>
-            <a href="contact.html">Contact</a>
-        </nav>
-    </header>
-    <main>
-        <section id="menu">
-            <h2>Our Menu</h2>
-            <div class="menu-item">
-                <img src="images/cupcakes.png" alt="Cupcakes">
-                <h3>Cupcakes - ₹50</h3>
-                <button class="order-now-btn" data-item="Cupcakes" data-price="50">Order Now</button>
-            </div>
-            <div class="menu-item">
-                <img src="images/cookies.png" alt="Cookies">
-                <h3>Cookies - ₹30</h3>
-                <button class="order-now-btn" data-item="Cookies" data-price="30">Order Now</button>
-            </div>
-            <div class="menu-item">
-                <img src="images/bread.png" alt="Bread Loaves">
-                <h3>Bread Loaves - ₹40</h3>
-                <button class="order-now-btn" data-item="Bread Loaves" data-price="40">Order Now</button>
-            </div>
-            <div class="menu-item">
-                <img src="images/pies.png" alt="Pies">
-                <h3>Pies - ₹80</h3>
-                <button class="order-now-btn" data-item="Pies" data-price="80">Order Now</button>
-            </div>
-        </section>
-        <section id="testimonials">
-            <h2>What Our Customers Say</h2>
-            <div class="testimonial">
-                <p>"The cupcakes are delicious! Perfectly baked every time."</p>
-                <p>- John D.</p>
-            </div>
-            <div class="testimonial">
-                <p>"Amazing cookies and friendly service. Highly recommend!"</p>
-                <p>- Sarah M.</p>
-            </div>
-            <div class="testimonial">
-                <p>"The pies are heavenly! I can't get enough of them."</p>
-                <p>- Alex T.</p>
-            </div>
-        </section>
-        <section id="special-offer">
-            <h2>Today's Special Offers</h2>
-            <div class="offer">
-                <img src="images/special-placeholder.png" alt="Special Offer">
-                <h3>Special Chocolate Cake</h3>
-                <p>A delightful chocolate cake available only today!</p>
-                <button class="order-now-btn" data-item="Special Chocolate Cake" data-price="120">Order Now</button>
-            </div>
-        </section>
-        <section id="subscribe">
-            <h2>Subscribe for Updates</h2>
-            <form action="https://formspree.io/f/xvggngwe" method="POST" class="subscribe-form">
-                <input type="email" name="email" placeholder="Enter your email" required>
-                <button type="submit">Subscribe</button>
-            </form>
-        </section>
-    </main>
-    <footer>
-        <p>© 2025 Bakery Delight. All rights reserved.</p>
-    </footer>
+  <header>
+    <h1>Welcome to Bakery Delight</h1>
+    <nav>
+      <a href="#about">About Us</a>
+      <a href="#menu">Our Menu</a>
+      <a href="#cart">View Cart</a>
+      <a href="#contact">Contact</a>
+    </nav>
+  </header>
+
+  <main>
+    <section id="menu">
+      <h2>Our Menu</h2>
+      <div class="menu-item" data-name="Cupcakes" data-price="50">
+        <img src="images/cupcakes.png" alt="Cupcakes">
+        <h3>Cupcakes - ₹50</h3>
+        <button class="add-to-cart">Add to Cart</button>
+      </div>
+      <div class="menu-item" data-name="Cookies" data-price="30">
+        <img src="images/cookies.png" alt="Cookies">
+        <h3>Cookies - ₹30</h3>
+        <button class="add-to-cart">Add to Cart</button>
+      </div>
+      <div class="menu-item" data-name="Bread Loaves" data-price="40">
+        <img src="images/bread.png" alt="Bread Loaves">
+        <h3>Bread Loaves - ₹40</h3>
+        <button class="add-to-cart">Add to Cart</button>
+      </div>
+      <div class="menu-item" data-name="Pies" data-price="80">
+        <img src="images/pies.png" alt="Pies">
+        <h3>Pies - ₹80</h3>
+        <button class="add-to-cart">Add to Cart</button>
+      </div>
+    </section>
+
+    <section id="cart">
+      <h2>Your Cart</h2>
+      <div id="cart-items"></div>
+      <div id="cart-summary">
+        <h3>Total: ₹<span id="cart-total">0</span></h3>
+        <button id="checkout">Checkout</button>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <p>&copy; 2025 Bakery Delight. All rights reserved.</p>
+  </footer>
+  <script src="script.js"></script>
 </body>
 </html>
